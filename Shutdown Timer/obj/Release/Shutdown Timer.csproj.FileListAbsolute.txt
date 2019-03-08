@@ -1,0 +1,11 @@
+C:\Users\Johnta\source\repos\Shutdown Timer\Shutdown Timer\bin\Release\Shutdown Timer.exe.config
+C:\Users\Johnta\source\repos\Shutdown Timer\Shutdown Timer\bin\Release\Shutdown Timer.exe
+C:\Users\Johnta\source\repos\Shutdown Timer\Shutdown Timer\bin\Release\Shutdown Timer.pdb
+C:\Users\Johnta\source\repos\Shutdown Timer\Shutdown Timer\obj\Release\Shutdown_Timer.InfoForm.resources
+C:\Users\Johnta\source\repos\Shutdown Timer\Shutdown Timer\obj\Release\Shutdown_Timer.MainForm.resources
+C:\Users\Johnta\source\repos\Shutdown Timer\Shutdown Timer\obj\Release\Shutdown_Timer.Properties.Resources.resources
+C:\Users\Johnta\source\repos\Shutdown Timer\Shutdown Timer\obj\Release\Shutdown Timer.csproj.GenerateResource.cache
+C:\Users\Johnta\source\repos\Shutdown Timer\Shutdown Timer\obj\Release\Shutdown Timer.csproj.CoreCompileInputs.cache
+C:\Users\Johnta\source\repos\Shutdown Timer\Shutdown Timer\obj\Release\Shutdown Timer.exe
+C:\Users\Johnta\source\repos\Shutdown Timer\Shutdown Timer\obj\Release\Shutdown Timer.pdb
+C:\Users\Johnta\source\repos\Shutdown Timer\Shutdown Timer\obj\Release\Shutdown Timer.csprojAssemblyReference.cache
