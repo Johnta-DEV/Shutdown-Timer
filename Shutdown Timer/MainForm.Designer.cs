@@ -34,12 +34,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.shutdownButton = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.InfoButton = new System.Windows.Forms.Button();
+            this.labelSeparator1 = new System.Windows.Forms.Label();
+            this.labelSeparator2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,7 +116,7 @@
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.richTextBox1.HideSelection = false;
-            this.richTextBox1.Location = new System.Drawing.Point(55, 26);
+            this.richTextBox1.Location = new System.Drawing.Point(53, 29);
             this.richTextBox1.MaxLength = 2;
             this.richTextBox1.Multiline = false;
             this.richTextBox1.Name = "richTextBox1";
@@ -129,50 +128,6 @@
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             this.richTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
-            // richTextBox4
-            // 
-            this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(13)))), ((int)(((byte)(21)))));
-            this.richTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox4.ForeColor = System.Drawing.SystemColors.Window;
-            this.richTextBox4.Location = new System.Drawing.Point(131, 26);
-            this.richTextBox4.MaxLength = 2;
-            this.richTextBox4.Multiline = false;
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.ReadOnly = true;
-            this.richTextBox4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox4.Size = new System.Drawing.Size(19, 77);
-            this.richTextBox4.TabIndex = 7;
-            this.richTextBox4.TabStop = false;
-            this.richTextBox4.Text = ":";
-            // 
-            // richTextBox5
-            // 
-            this.richTextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(13)))), ((int)(((byte)(21)))));
-            this.richTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.richTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox5.ForeColor = System.Drawing.SystemColors.Window;
-            this.richTextBox5.Location = new System.Drawing.Point(232, 26);
-            this.richTextBox5.MaxLength = 2;
-            this.richTextBox5.Multiline = false;
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.ReadOnly = true;
-            this.richTextBox5.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox5.Size = new System.Drawing.Size(19, 77);
-            this.richTextBox5.TabIndex = 8;
-            this.richTextBox5.TabStop = false;
-            this.richTextBox5.Text = ":";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(15, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(115, 20);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Visible = false;
-            // 
             // richTextBox2
             // 
             this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(13)))), ((int)(((byte)(21)))));
@@ -181,7 +136,7 @@
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox2.ForeColor = System.Drawing.SystemColors.Window;
             this.richTextBox2.HideSelection = false;
-            this.richTextBox2.Location = new System.Drawing.Point(153, 26);
+            this.richTextBox2.Location = new System.Drawing.Point(153, 28);
             this.richTextBox2.MaxLength = 2;
             this.richTextBox2.Multiline = false;
             this.richTextBox2.Name = "richTextBox2";
@@ -201,7 +156,7 @@
             this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox3.ForeColor = System.Drawing.SystemColors.Window;
             this.richTextBox3.HideSelection = false;
-            this.richTextBox3.Location = new System.Drawing.Point(257, 26);
+            this.richTextBox3.Location = new System.Drawing.Point(254, 28);
             this.richTextBox3.MaxLength = 2;
             this.richTextBox3.Multiline = false;
             this.richTextBox3.Name = "richTextBox3";
@@ -229,6 +184,28 @@
             this.InfoButton.UseVisualStyleBackColor = true;
             this.InfoButton.Click += new System.EventHandler(this.InfoButton_Click);
             // 
+            // labelSeparator1
+            // 
+            this.labelSeparator1.AutoSize = true;
+            this.labelSeparator1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSeparator1.ForeColor = System.Drawing.SystemColors.Window;
+            this.labelSeparator1.Location = new System.Drawing.Point(118, 28);
+            this.labelSeparator1.Name = "labelSeparator1";
+            this.labelSeparator1.Size = new System.Drawing.Size(50, 73);
+            this.labelSeparator1.TabIndex = 4;
+            this.labelSeparator1.Text = ":";
+            // 
+            // labelSeparator2
+            // 
+            this.labelSeparator2.AutoSize = true;
+            this.labelSeparator2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSeparator2.ForeColor = System.Drawing.SystemColors.Window;
+            this.labelSeparator2.Location = new System.Drawing.Point(217, 28);
+            this.labelSeparator2.Name = "labelSeparator2";
+            this.labelSeparator2.Size = new System.Drawing.Size(50, 73);
+            this.labelSeparator2.TabIndex = 11;
+            this.labelSeparator2.Text = ":";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,10 +215,9 @@
             this.Controls.Add(this.InfoButton);
             this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.richTextBox5);
-            this.Controls.Add(this.richTextBox4);
             this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.labelSeparator2);
+            this.Controls.Add(this.labelSeparator1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -264,12 +240,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button shutdownButton;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.RichTextBox richTextBox5;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.Button InfoButton;
+        private System.Windows.Forms.Label labelSeparator1;
+        private System.Windows.Forms.Label labelSeparator2;
     }
 }
 

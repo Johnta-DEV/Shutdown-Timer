@@ -116,7 +116,6 @@ namespace Shutdown_Timer
                 SleepButton.BackColor = SleepButton.FlatAppearance.MouseOverBackColor;
                 StartTimer();
             }
-            //Application.SetSuspendState(PowerState.Hibernate, true, true);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -143,7 +142,6 @@ namespace Shutdown_Timer
                 ReloadButton.BackColor = ReloadButton.FlatAppearance.MouseOverBackColor;
                 StartTimer();
             }
-            //type = ShutdownType.Reload;
         }
         private void shutdownButton_Click(object sender, EventArgs e)
         {
@@ -170,8 +168,7 @@ namespace Shutdown_Timer
                 StartTimer();
             }
         }
-
-
+        
         private void richTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (isTimerRunning == false)
@@ -246,7 +243,7 @@ namespace Shutdown_Timer
 
         private void richTextBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (isTimerRunning)
+            if (isTimerRunning == false)
             {
                 if (e.KeyChar <= 47 || e.KeyChar >= 58)
                 {
@@ -365,19 +362,18 @@ namespace Shutdown_Timer
         }
         private void TimerTick(object source, EventArgs e)
         {
-            //BeginInvoke(new Action(() => textBox1.Text = sec.ToString()));
             BeginInvoke(new Action(() => DecreaseTime()));
             BeginInvoke(new Action(() => UpdateUI()));
         }
         private void OnTimerEnd()
         {
-            //textBox1.Text = "END";
             timer.Stop();
             isTimerRunning = false;
             LockUI(false);
             ReloadButton.BackColor = this.BackColor;
             SleepButton.BackColor = this.BackColor;
             shutdownButton.BackColor = this.BackColor;
+            infoForm.Hide();
 
             switch (type)
             {
@@ -400,7 +396,6 @@ namespace Shutdown_Timer
         private void DecreaseTime()
         {
             sec--;
-
             if (hours <= 0 && mins <= 0 && sec <= 0)
             {
                 hours = 0;
@@ -413,7 +408,7 @@ namespace Shutdown_Timer
             {
                 sec = 59;
                 mins--;
-                if (mins < 1)
+                if (mins < 1 && hours > 0)
                 {
                     mins = 59;
                     hours--;
@@ -425,7 +420,7 @@ namespace Shutdown_Timer
             richTextBox1.Text = hours.ToString();
             richTextBox2.Text = mins.ToString();
             richTextBox3.Text = sec.ToString();
-            this.Text = hours + ":" + mins + ":" + sec + " Таймер выключения";
+            this.Text = richTextBox1.Text + ":" + richTextBox2.Text + ":" + richTextBox3.Text + " Таймер выключения";
         }
         private void LockUI(bool LockState)
         {
